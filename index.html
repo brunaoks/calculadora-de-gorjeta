@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculadora de Gorjetas </title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="images/start-logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div id="container">
+        <div>
+            <h1 id="titulo"> Calculadora de Gorjetas </h1>
+        </div>
+        <div>
+            <form class="formulario" id="formulario">
+                <label for="conta">
+                    <p> Quanto ficou a conta? </p>
+                </label>
+                <p>
+                    R$ <input type="number" placeholder="100" name="conta" id="conta" class="campo" required>
+                </p>
+                <label for="qualidadeServ">
+                    <p> Como foi o seu serviço? </p>
+                </label>
+                <p>
+                    <select name="qualidadeServ" id="qualidadeServ" class="campo-select" required>
+                        <option disabled selected value="0"> -- Escolha uma opção </option>
+                        <option value="0.3"> 30% - Incrível </option>
+                        <option value="0.2"> 20% - Bom </option>
+                        <option value="0.15"> 15% - Aceitável </option>
+                        <option value="0.1"> 10% - Ruim </option>
+                        <option value="0.05"> 05% - Péssimo </option>
+                    </select>
+                </p>
+                <label for="pessoas">
+                    <p> Quantas pessoas vão dividir a conta? </p>
+                </label>
+                <p>
+                    <input type="number" placeholder="1" name="pessoas" id="pessoas" class="campo" required> pessoa(as)
+                </p>
+                <button type="submit" id="botao"> Calcular </button>
+            </form>
+        </div>
+        <div id="totalGorjeta">
+            Gorjeta total:
+            R$ <span id="gorjeta"> 0.00 </span>
+            <span id="cada"> cada </span>
+        </div>
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

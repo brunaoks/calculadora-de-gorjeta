@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700|PT++Mono);
+
+:root {
+    --cor-primaria: lightcoral;
+    --cor-secundaria: dimgrey;
+    --cor-terciaria: gainsboro;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    font-size: 15px;
+    font-family: Lato, sans-serif;
+}
+
+#container {
+    height: 525px;
+    width: 360px;
+    margin: 100px auto;
+    background: #f7f7f7;
+    box-shadow: 3px 3px 3px rgb(90, 90, 90);
+    border-radius: 15px;
+}
+
+#titulo {
+    background: var(--cor-terciaria);
+    color: var(--cor-secundaria);
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: normal;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+}
+
+.formulario {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.campo {
+    background: white;
+    width: 40px;
+    padding: 5px 5px 8px 8px;
+}
+
+.campo:focus {
+    border: 3px solid var(--cor-primaria);
+    outline: none;
+}
+
+.campo-select {
+    width: 180px;
+    padding: 5px;
+    font-size: 13px;
+}
+
+#botao {
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin: 30px auto;
+    background: var(--cor-primaria);
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    color: white;
+}
+
+#totalGorjeta {
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: center;
+}
